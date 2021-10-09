@@ -1,20 +1,32 @@
-// GAME2001-A1-101247804.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+//#include "UnorderArray.h"
+//#include "OrderArray.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	OrderArray<int> array(3);
+
+	array.push(3);
+	array.push(53);
+	array.push(83);
+	array.push(23); 		
+	array.push(82); 
+
+	array[2] = 112;
+
+	array.pop();
+	array.remove(2);
+
+	cout << "Ordered array contents: ";
+
+	for (int i = 0; i < array.GetSize(); i++)
+	{
+		cout << array[i] << " ";
+	}
+
+	cout << endl;
+
+	return 0;
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
