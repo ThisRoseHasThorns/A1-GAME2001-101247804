@@ -1,20 +1,18 @@
 #include <iostream>
-//#include "UnorderArray.h"
+#include "UnorderArray.h"
 //#include "OrderArray.h"
 
 using namespace std;
 
 int main()
 {
-	OrderArray<int> array(3);
+	UnorderArray<int> array(3);
 
 	array.push(3);
 	array.push(15);
 	array.push(6);
 	array.push(12); 		
 	array.push(9); 
-
-	array[2] = 112;
 
 	array.pop();
 	array.remove(2);

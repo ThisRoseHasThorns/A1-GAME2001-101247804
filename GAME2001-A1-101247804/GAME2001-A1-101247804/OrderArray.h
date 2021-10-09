@@ -19,7 +19,7 @@ public:
 		}
 	}
 
-	~OrderedArray()
+	~OrderArray()
 	{
 		if (m_array != nullptr)
 		{

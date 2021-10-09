@@ -141,6 +141,10 @@
   <ItemGroup>
     <ClCompile Include="GAME2001-A1-101247804.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OrderArray.h" />
+    <ClInclude Include="UnorderArray.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
